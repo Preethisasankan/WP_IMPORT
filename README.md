@@ -8,7 +8,7 @@ Imports the events from the JSON file.
 Can be triggered via Wordpress CLI: event name is 'wpimp_cron_hook'
 
 Event will update on multiple import with same ID(ID from data.json).
-After the import, an email will be sent to logging@agentur-loop.com
+After the import, an email will be sent to logging@********.com
 
 Events list : {baseURL}/event/
 Note: In events list the events status (Past, Today or  remaining days will be shown)
