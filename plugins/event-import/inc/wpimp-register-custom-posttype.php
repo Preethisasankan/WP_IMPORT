@@ -61,9 +61,9 @@ add_action('init', 'wpimp_reg_tag');
  * 
  */
 function get_the_difference($timestamp){
-
     
-    $difference=the_difference($timestamp);
+    $today = current_time( 'timestamp');
+    $difference=(int)$timestamp-$today;
     if($difference>0){
         $daysleft = round((($difference/24)/60)/60)." days remaining";
     }elseif($difference==0){
@@ -74,10 +74,5 @@ function get_the_difference($timestamp){
         
    
    return $daysleft;
-
-}
-function the_difference($timestamp){
-    $today = current_time( 'timestamp');
-    return (int)$timestamp-$today;
 
 }

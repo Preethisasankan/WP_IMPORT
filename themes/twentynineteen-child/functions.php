@@ -1,8 +1,8 @@
 <?php
 /**
- * Custom Posttype for Events.
- * To import the data from json and update event post.
- * To set cronjob for the event
+ * 1.1 Custom Posttype for Events.
+ * 1.2 To import the data from json and update event post.
+ * 1.3 To set cronjob for the event
  * 
  */
 
@@ -20,14 +20,14 @@ function my_theme_enqueue_styles() {
     );
 }
 /**
- * Custom Posttype for Events
+ * 1.1 Custom Posttype for Events
  */
 require get_stylesheet_directory() . '/inc/wpimp/wpimp-register-custom-posttype.php';
 /**
- * To import the data from json and update event post
+ * 1.2 To import the data from json and update event post.
  */
 require get_stylesheet_directory() . '/inc/wpimp/wpimp-import-event.php';
 /**
- * To set cronjob for the event
+ * 1.3 To set cronjob for the event.
  */
 require get_stylesheet_directory() . '/inc/wpimp/wpimp-cron-job.php';

@@ -19,6 +19,10 @@ if ( ! wp_next_scheduled( 'wpimp_cron_hook' ) ) {
 add_action( 'wpimp_cron_hook', 'wpimp_cron_function');
 //create your function, that runs on cron
 function wpimp_cron_function() {
-    $wpimp_object=new WPIMP();
-    $wpimp_object->wpimp_import_data();
+        wpimp_import_data();
+}
+
+add_action( 'wpimp_cron_hook', 'wpimp_function');
+function wpimp_function() {
+wp_mail( 'logging@agentur-loop.com', 'Event imported successfully', 'Event imported successfully' );
 }
