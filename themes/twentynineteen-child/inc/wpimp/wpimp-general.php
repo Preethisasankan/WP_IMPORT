@@ -58,11 +58,12 @@ function wpimp_reg_tag() {
  }
 add_action('init', 'wpimp_reg_tag');
 /**
+ * To show timer in event list (FE)
  * 
+ ** @param   timestamp $timestamp timestamp
+ * @return   string $daysleft daysleft.
  */
-function get_the_difference($timestamp){
-
-    
+function get_the_difference($timestamp){ 
     $difference=the_difference($timestamp);
     if($difference>0){
         $daysleft = round((($difference/24)/60)/60)." days remaining";
@@ -71,13 +72,16 @@ function get_the_difference($timestamp){
     }else{
         $daysleft="Past";
     }
-        
-   
    return $daysleft;
 
 }
+/**
+ * To show timer in event list (FE)
+ * 
+ ** @param   timestamp $timestamp timestamp
+ * @return   string $daysleft difference.
+ */
 function the_difference($timestamp){
     $today = current_time( 'timestamp');
     return (int)$timestamp-$today;
-
 }

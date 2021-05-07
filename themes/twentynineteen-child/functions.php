@@ -20,7 +20,9 @@ function my_theme_enqueue_styles() {
     );
 }
 /**
- * 1.1 Custom Posttype for Events
+ * 1.1.1 Custom Posttype for Events
+ * 1.1.2 Function to add Tag Selection to event
+ * 1.1.3 To show timer in event list (FE)
  */
 require get_stylesheet_directory() . '/inc/wpimp/wpimp-general.php';
 /**
