@@ -5,15 +5,6 @@ add_action( 'rest_api_init', 'adding_user_meta_rest' );
  * Adds user_meta to rest api 'user' endpoint.
  */
 
-$acf_fields = array(
-    'id',
-    'organizer',
-    'isActive',
-    'email',
-    'address',
-    'latitude',
-    'longitude'
-);
 function adding_user_meta_rest() {
     register_rest_field( 'event',
         'organizer',
