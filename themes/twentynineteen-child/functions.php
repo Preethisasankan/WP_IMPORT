@@ -22,7 +22,7 @@ function my_theme_enqueue_styles() {
 /**
  * 1.1 Custom Posttype for Events
  */
-require get_stylesheet_directory() . '/inc/wpimp/wpimp-register-custom-posttype.php';
+require get_stylesheet_directory() . '/inc/wpimp/wpimp-general.php';
 /**
  * 1.2 To import the data from json and update event post.
  */
