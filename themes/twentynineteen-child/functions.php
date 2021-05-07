@@ -31,3 +31,7 @@ require get_stylesheet_directory() . '/inc/wpimp/wpimp-import-event.php';
  * 1.3 To set cronjob for the event.
  */
 require get_stylesheet_directory() . '/inc/wpimp/wpimp-cron-job.php';
+/**
+ * 1.4 To set custom fields for the api.
+ */
+require get_stylesheet_directory() . '/inc/wpimp/wpimp-api.php';
