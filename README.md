@@ -1,7 +1,8 @@
-# WP_IMPORT
-Keep the updated json in theme/wpimp-data/data.json
+# Readme
+Currently the data file has been placed in the theme/wpimp-data/data.json.
 
 Features:
+=====================================
 
 Imports the events from the JSON file.
 
